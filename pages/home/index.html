@@ -4,14 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/text.css" />
     <link rel="stylesheet" href="index.css" />
     <title>Open Music</title>
   </head>
-  <body>
-    <main></main>
-    <script src="../../scripts/theme.js"></script>
-    <script src="./productsData.js"></script>
-    <script src="./index.js"></script>
+  <body class="container">
+    <header>
+      <div class="header">
+        <h1>
+          Open Music
+        </h1>
+        <button class="mode-button">
+          <img class="icon-moon" src="../../assets/img/moon.svg">
+          <img class="icon-sun hide-icon" src="../../assets/img/sun.svg">
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="separator">
+        <h2 class="text1-normal separator">Gênero Musical</h2>
+        <nav id="filter-menu">
+        </nav>
+        <div class="slider-header">
+          <p class="text1-normal">Definir Preços</p>
+          <p class="text1-normal"id="show-range"></p>
+        </div>
+        <div class=".slider-container">
+          <input type="range" min="1" max="300" value="120" class="slider" id="myRange">
+        </div>
+      </section>
+      <section>
+        <h3 class="text1-normal">Albuns Encontrados</h3>
+        <ul id="album-list">
+        </ul>
+      </section>
+    </main>
+    <script src="../../scripts/theme.js" type="module"></script>
+    <script src="./productsData.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="../../scripts/filtermenu.js" type="module"></script>
+    <script src="../../scripts/renderalbums.js" type="module"></script>
   </body>
 </html>

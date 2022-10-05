@@ -1,0 +1,12 @@
+.font-button{
+font-weight: var(--weight-medium);
+font-size: var(--font-3);
+line-height: 0rem;
+}
+
+.text1-normal{
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.188rem;
+}
+

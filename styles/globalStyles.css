@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+main{
+  margin-bottom: var(--bottom-margins);
+}
 
 :root {
   --color-brand-1:#9747ff;
@@ -22,13 +25,80 @@
   --color-disable-fixed: #212529;
   --color-actived-fixed: #2b2f33;
   --color-white-fixed: #ffffff;
+  --bottom-margins: 2rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
 
   --font-1: 1.75rem;
   --font-2: 1rem;
   --font-3: 0.875rem;
 
+  --gap-1: 0.625rem;
+  --gap-2: 1.25rem;
+
+  --radius-1: 0.25rem;
+  --radius-2: 0.5rem;
+  --radius-rounded:50%;
+  --container: 45rem;
+  
+
+  --filter-button-width: max-content;
+  --filter-button-padding:0.5rem 0.5rem;
+  --filter-button-height: 2rem;
+  --filter-gap:2rem;
+  --slider-handle-dimensions:1rem;
+  --cursor-interactable:pointer;
+  --slider-height:0.625rem;
+  --width-full:100%;
+  --button-padding:1rem 0.5rem;
+  
+  --border-grey-7: 0.063rem solid var(--color-grey-7);
+  --border-grey-8: 0.063rem solid var(--color-grey-8);
+  --border-grey-1: 0.063rem solid var(--color-grey-1);
+  
+
+}
+
+.dark-mode:root {
+  --color-brand-1:#9747ff;
+  --color-grey-9: #15171a;
+  --color-grey-8: #212529;
+  --color-grey-7: #2b2f33;
+  --color-grey-6: #868e96;
+  --color-grey-5: #adb5bd;
+  --color-grey-4: #ced4da;
+  --color-grey-4: #dee2e6;
+  --color-grey-2: #f1f3f5;
+  --color-grey-1: #f8f9fa;
+  --color-grey-0: #fdfeff;
+
+  --color-disable-fixed: #212529;
+  --color-actived-fixed: #2b2f33;
+  --color-white-fixed: #ffffff;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+
+  --font-1: 1.75rem;
+  --font-2: 1rem;
+  --font-3: 0.875rem; /*14px*/
+
+  --gap-1: 0.625rem;
+
   --radius-1: 0.25rem;
   --container: 45rem;
+  
+
+  --filter-button-width: max-content;
+  --filter-button-padding:0rem 0.5rem;
+  
+  --border-grey-7: 0.063rem solid var(--color-grey-7);
+  --border-grey-8: 0.063rem solid var(--color-grey-8);
+  --border-dark-hover:0.063rem solid var(--color-grey-0);
+
 }
 
 body {
@@ -36,6 +106,7 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
+  color:var(--color-grey-1);
 }
 
 .container {

@@ -1,1 +1,172 @@
-/* Desenvolva sua estilização aqui ... */
+.header{
+    display:flex;
+    width: var(--width-full);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--bottom-margins);
+}
+.filter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:var(--filter-button-height);
+    max-width: max-content;
+    color: var(--color-grey-1);
+    border: var(--border-grey-8);
+    border-radius: var(--radius-1);
+    padding: var(--filter-button-padding);
+    background-color: var(--color-grey-8);
+    gap: var(--gap-1);
+    cursor: pointer;
+}
+.dark-mode .filter-button:hover{
+    background-color: var(--color-grey-8) ;
+    border:var(--border-dark-hover);
+    color: var(--color-grey-1);
+}
+.filter-button:hover{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-9);
+}
+.filter-button-toggled{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-9);
+}
+.dark-mode .filter-button-toggled{
+    background-color: var(--color-grey-8) ;
+    border:var(--border-dark-hover);
+    color: var(--color-grey-1);
+}
+.album-element{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 19.25rem;
+    border-radius: var(--radius-1);
+    overflow: hidden;
+}
+#album-list{
+    width: var(--width-full);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2.5rem;
+    justify-content: space-between;
+    margin-top: var(--bottom-margins);
+}
+.album-data{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 16px;
+gap: 20px;
+width: 308px;
+background: var(--color-grey-8);
+}
+.album-img{
+    width: var(--width-full);
+    object-fit: cover;
+}
+.band-year{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: var(--gap-2);
+}
+
+.album-buy{
+    width: var(--width-full);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.buy-button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: var(--button-padding);
+max-width: max-content;
+gap: var(--gap-1);
+background-color: var(--color-grey-7);
+color: var(--color-grey-1);
+border: none;
+border-radius: var(--radius-1);
+cursor: var(--cursor-interactable);
+}
+.buy-button:hover{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-7);
+}
+#filter-menu{
+    width: var(--width-full);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:var(--filter-gap);
+    margin-bottom: var(--bottom-margins);
+}
+.slider-header{
+    width: var(--width-full);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--bottom-margins);
+}
+.slider-container{
+    width: var(--width-full);
+    margin-top: var(--bottom-margins);
+}
+.slider{
+    width: var(--width-full);
+    appearance: none;
+    background: var(--color-brand-1);
+    background: #d3d3d3;
+    height:var(--slider-height);
+    border-radius: var(--radius-2);
+    outline: none; /* Remove outline */
+}
+
+.slider::-webkit-slider-thumb{
+-webkit-appearance: none; /* Override default look */
+appearance: none;
+width: var(--slider-handle-dimensions); /* Set a specific slider handle width */
+height: var(--slider-handle-dimensions); /* Slider handle height */
+background: var(--color-brand-1); /* Green background */
+cursor: var(--cursor-interactable); /* Cursor on hover */
+border-radius: var(--radius-rounded);
+}
+
+.mode-button{
+    width: max-content;
+    padding:0.25rem;
+    background-color: var(--color-grey-8);
+    border-radius: var(--radius-1);
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode-button:hover{
+    
+    border:var(--border-grey-1);
+}
+.icon-sun{
+    object-fit: cover;
+    object-position: center;
+}
+.icon-moon{
+    object-fit: cover;
+    object-position: center;
+}
+.hide-icon{
+    display:none;
+}
+
+.separator{
+    margin-bottom: var(--bottom-margins);
+}
