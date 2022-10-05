@@ -1,4 +1,4 @@
-import { globalState, globalRange } from "/scripts/filtermenu.js";
+import { globalState, globalRange } from "./filtermenu.js";
 
 
 export function renderProducts(array, node) {

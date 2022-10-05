@@ -1,6 +1,6 @@
-import { createMenuButtons,filterActive,globalState,globalRange } from "/scripts/filtermenu.js";
-import { categories,products } from "/productsData.js";
-import { renderProducts } from "/scripts/renderalbums.js";
+import { createMenuButtons,filterActive,globalState,globalRange } from "./scripts/filtermenu.js";
+import { categories,products } from "./productsData.js";
+import { renderProducts } from "./scripts/renderalbums.js";
 
 console.log(createMenuButtons)
 console.log(categories)
