@@ -1,5 +1,5 @@
-import { globalState, globalRange } from "../../scripts/filtermenu.js";
-import { products, categories } from "../pages/home/productsData.js";
+import { globalState, globalRange } from "/scripts/filtermenu.js";
+
 
 export function renderProducts(array, node) {
   let renderArray = []

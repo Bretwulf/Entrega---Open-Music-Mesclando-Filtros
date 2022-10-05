@@ -1,6 +1,6 @@
-import { renderProducts } from "../../scripts/renderalbums.js";
-import { products } from "../pages/home/productsData.js";
-import {albumList} from "../pages/home/index.js"
+import { renderProducts } from "/scripts/renderalbums.js";
+import { products } from "/productsData.js";
+import {albumList} from "/index.js"
 export let globalState = 0;
 export let globalRange = document.getElementById("myRange").value;
 /* ----------------------------- slider de range ---------------------------- */
